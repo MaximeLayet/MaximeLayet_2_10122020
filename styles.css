@@ -38,3 +38,41 @@
          transition: 0.3s;
          color: #0065fc;
      }
+
+
+     /*div.haut*/
+
+     div.haut h1
+     {
+         font-style: bold;
+         font-size: 1.8em;
+
+     }
+ 
+     div.haut h2
+     {
+        font-weight: normal;
+     }
+
+     form
+     {
+         display: flex;
+         justify-content: left;
+         width: 2em;
+        display: inline;
+
+
+     }
+
+     div.haut img
+     {
+         width: 1em;
+         background-color: #f2f2f2;
+     }
+
+     input.envoyer
+     {
+         background-color: #0065fc;
+         color: white;
+         border-radius: 0% 20% 20% 0%;
+     }
