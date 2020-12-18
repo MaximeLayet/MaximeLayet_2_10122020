@@ -7,7 +7,165 @@
 </head>
 <body>
     <div id="bloc_page">
+
+        <!--Header avec logo à gauche et menu à droite-->
+        <header>  
+            <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"> 
+            <nav class="haut">
+                <ul>
+                    <li>Hébergements</li>
+                    <li>Activités</li>
+                    <li>S'inscrire</li>
+                </ul>
+            </nav>        
+        </header>
+
+<!--div avec h1 et h2 et champ de recherche ville *ajouter fonction prérempli*-->
+        <div class="haut">  
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre ville ou en pleine nature</h2> 
+            <form method="POST" action="traitement.php" >
+                <img src="images/logo//Map-Marker.png" alt="image map_markup ">
+                <p>
+                    <input type="text" value="Marseille,France" id="Rechercher" >
+                    <input type="submit" value="Envoyer" />
+                </p>
+            </form>         
+        </div>
         
+
+<!--div avec filtres *non-actif* mais créer transition et insertion d'image-->
+        <div class="filtres">     
+            <h2>Filtres</h2>
+            <div class="eco">
+                <img src="images/logo/money-bill-wave-solid.svg" alt="billet">
+                <p>Économique</p>
+            </div>
+            <div class="famille">
+                <img src="images/logo/child-solid.svg" alt="kid"> 
+                <p>Familial</p>
+            </div>
+            <div class="love">
+                <img src="images/logo/heart-solid.svg" alt="coeur">
+                <p>Romantique</p>
+            </div>
+            <div class="animaux">
+                <img src="images/logo/dog-solid.svg" alt="chien">
+                <p>Animaux autorisés</p>
+            </div>
+            <div class="info">
+                <img src="images/logo/info-solid.png" alt="information">
+                <p>Plus de 500 logements dans cette ville</p>
+            </div>
+        </div>
+
+<!--div avec photos *ajouter title?* avec descriptif-->
+        <div class="hébergements">
+            <h2>Hébergements à Marseille</h2>
+            <div class="photo_hebergement">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_hebergement">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_hebergement">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_hebergement">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_hebergement">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_hebergement">
+                <img src="" alt="">
+                <p></p>
+            </div>
+           
+            <h3>Afficher plus</h3>
+            
+        </div>
+<!--à droite en face de div.hébergements-->
+        <aside> 
+            <h2>Les plus populaires</h2>
+            <img src="images/logo/chart-line-solid.png" alt="chart_line">
+            <div class="photo_popu">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_popu">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="photo_popu">
+                <img src="" alt="">
+                <p></p>
+            </div>
+           
+        </aside>
+
+<!--derniere box avant le footer sur toute la largeur de la page-->
+        <div class="Actiivtés"> 
+            <h2>Activités à Marseille</h2>
+            <div class="photo_activités">
+                <img src="" alt="">
+                <p></p>
+                <div class="photo_activités">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="photo_activités">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="photo_activités">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="photo_activités">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+                <div class="photo_activités">
+                    <img src="" alt="">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+<!--Footer avec 3 menus-->
+        <footer>
+            <nav class="bas_gauche">
+                <ul>
+                    <li class="titre">À propos</li>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </nav>
+
+            <nav class="bas_centre">
+                <ul>
+                    <li class="titre">Nos hébergements</li>
+                    <li>harte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+            </nav>
+
+            <nav class="bas_droite">
+                <ul>
+                    <li class="titre">Assistance</li>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </nav>
+        </footer>
+
 
     </div>
 </body>
