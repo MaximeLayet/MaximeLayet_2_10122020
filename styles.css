@@ -31,14 +31,30 @@
          list-style-type: none;
          display: inline;
          margin: 20px;   
+         
      }
 
-     header li:hover
+     header li :hover
      {
          transition: 0.3s;
          color: #0065fc;
      }
 
+     a
+     {
+         text-decoration: none;
+         text-decoration-color: none;
+         color: black;
+     }
+
+     img.markup
+     {
+         background-color: #f2f2f2;
+         padding: 10px;
+         border-top-left-radius:20% ;
+         border-bottom-left-radius: 20%;
+
+     }
 
      /*div.haut*/
 
@@ -52,6 +68,12 @@
      div.haut h2
      {
         font-weight: normal;
+     }
+
+     div.search
+     {
+         
+         display: inline;
      }
 
      form
@@ -95,6 +117,8 @@
      div.hébergements
      {
          background-color: #f2f2f2;
+         border-radius: 5%;
+         padding: 50px;
          
      }
 
@@ -112,13 +136,43 @@
 
      aside
      {
-         display: flex;
-         justify-content: right;
+         background-color: #f2f2f2;
+         border-radius: 5%;
+         padding: 50px;
+
      }
+
+     aside img
+     {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         width: 13em;
+         border-radius: 20%;
+     }
+
+     img.charte
+     {
+         width: 5%;
+     }
+
+    
 
      /*aside*/
 
      /*div.activités*/
+
+     div.activités
+     {
+         display: flex;
+         justify-content: space-around;
+     }
+
+     div.activités img
+     {
+         border-radius: 20%;
+
+     }
      /*div.activités*/
 
      /*footer*/

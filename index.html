@@ -13,9 +13,9 @@
             <img src="images/logo/Reservia@3x.png" alt="Logo Reservia"> 
             <nav class="haut">
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
+                    <li><a href="#ancre1">Hébergements</a></li>
+                    <li><a href="#ancre2">Activités</a></li>
+                    <li><a href="inscription.html">S'inscrire</a></li>
                 </ul>
             </nav>        
         </header>
@@ -24,13 +24,15 @@
         <div class="haut">  
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <h2>En plein centre ville ou en pleine nature</h2> 
-            <form method="POST" action="traitement.php" >
-                <img src="images/logo//Map-Marker.png" alt="image map_markup ">
-                <p>
-                    <input type="text" value="Marseille,France" id="Rechercher" >
-                    <input class="envoyer" type="submit" value="Rechercher" />
-                </p>
-            </form>         
+            <div class="search">
+                <form method="POST" action="traitement.php" >
+                    <img class="markup" src="images/logo//Map-Marker.png" alt="image map_markup ">
+                    <p>
+                        <input type="text" value="Marseille,France" id="Rechercher" >
+                        <input class="envoyer" type="submit" value="Rechercher" />
+                    </p>
+                </form> 
+             </div>        
         </div>
         
 
@@ -60,42 +62,48 @@
         </div>
 
 <!--div avec photos *ajouter title?* avec descriptif-->
-        <div class="hébergements">
+        <div id="ancre1" class="hébergements">
             <h2>Hébergements à Marseille</h2>
             <div class="box1">
                 <div class="photo_hebergement">
                     <img src="images/hebergements/4_small/cannebiere.jpg" alt="hôtel_de_la_cannebière">
-                    <p>Auberge de la Cannebière</p>
+                    <p><strong>Auberge de la Cannebière</strong></p>
+                    <p>Nuit à partir de 25€</p>
                 </div>
             </div>
             <div class="box1">
                 <div class="photo_hebergement">
                     <img src="images/hebergements/4_small/hotel_du_port.jpg" alt="hotel_du_port">
-                    <p>Hôtel du port</p>
+                    <p><strong>Hôtel du port</strong></p>
+                    <p>Nuit à partir de 52€</p>
                 </div>
             </div>
             <div class="box1">
                 <div class="photo_hebergement">
                     <img src="images/hebergements/4_small/mouettes.jpg" alt="hôtel_des_mouettes">
-                    <p>Hôtele les mouettes</p>
+                    <p><strong>Hôtel les mouettes</strong></p>
+                    <p>Nuit à partir de 76€</p>
                  </div>
             </div>
             <div class="box1">
                 <div class="photo_hebergement">
                     <img src="images/hebergements/4_small/hotel_de_la_mer.jpg" alt="hotel_de_la_mer">
-                    <p>Hôtel de la mer</p>
+                    <p><strong>Hôtel de la mer</strong></p>
+                    <p>Nuit à partir de 46€</p>
                  </div>
             </div>
             <div class="box1">
                 <div class="photo_hebergement">
                     <img src="images/hebergements/4_small/panier.jpg" alt="auberge_le_panier">
-                    <p>Auberge le Panier</p>
+                    <p><strong>Auberge le Panier</strong></p>
+                    <p>Nuit à partir de 23€</p>
                 </div>
             </div>
             <div class="box1">
                 <div class="photo_hebergement">
                     <img src="images/hebergements/4_small/amina.jpg" alt="hôtel_chez_amina">
-                    <p>Hôtel chez Amina</p>
+                    <p><strong>Hôtel chez Amina</strong></p>
+                    <p>Nuit à partir de 96€</p>
                 </div>
             </div>
            
@@ -105,24 +113,29 @@
 <!--à droite en face de div.hébergements-->
         <aside> 
             <h2>Les plus populaires</h2>
-            <img src="images/logo/chart-line-solid.png" alt="chart_line">
-            <div class="photo_popu">
-                <img src="images/hebergements/4_small/soleil_du_matin.jpg" alt="hôtel_le_soleil_du_matin">
-                <p>Hôtel le soleil du matin</p>
+            <img class="charte"src="images/logo/chart-line-solid.png" alt="chart_line">
+            <div class="box2">
+                <div class="photo_popu">
+                    <img src="images/hebergements/4_small/soleil_du_matin.jpg" alt="hôtel_le_soleil_du_matin">
+                    <p>Hôtel le soleil du matin</p>
+                </div>
             </div>
-            <div class="photo_popu">
-                <img src="images/hebergements/4_small/coeur_de_leau.jpg" alt="au_coeur_de_leau_chambres_dhôte">
-                <p>Au cœur de l'eau chambres d'hôtes</p>
+            <div class="box2">
+                <div class="photo_popu">
+                    <img src="images/hebergements/4_small/coeur_de_leau.jpg" alt="au_coeur_de_leau_chambres_dhôte">
+                    <p>Au cœur de l'eau chambres d'hôtes</p>
+                </div>
             </div>
-            <div class="photo_popu">
-                <img src="images/hebergements/4_small/bleu_et_blanc.jpg" alt="hôtel_tout_bleu_et_blanc">
-                <p>Hôtel tout bleu et blanc</p>
-            </div>
-           
+            <div class="box2">
+                <div class="photo_popu">
+                    <img src="images/hebergements/4_small/bleu_et_blanc.jpg" alt="hôtel_tout_bleu_et_blanc">
+                    <p>Hôtel tout bleu et blanc</p>
+                </div>
+            </div>          
         </aside>
 
 <!--derniere box avant le footer sur toute la largeur de la page-->
-        <div class="activités"> 
+        <div id="ancre2" class="activités"> 
             <h2>Activités à Marseille</h2>
             <div class="photo_activités">
                 <img src="images/activites/4_small/port.jpg" alt="vieux_port">
@@ -164,7 +177,7 @@
             <nav class="bas_centre">
                 <ul>
                     <li class="titre">Nos hébergements</li>
-                    <li class="liste">harte qualité</li>
+                    <li class="liste">Charte qualité</li>
                     <li class="liste">Soumettre votre hôtel</li>
                 </ul>
             </nav>
