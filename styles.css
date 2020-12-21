@@ -33,7 +33,7 @@
          margin: 20px;   
      }
 
-     li:hover
+     header li:hover
      {
          transition: 0.3s;
          color: #0065fc;
@@ -76,3 +76,81 @@
          color: white;
          border-radius: 0% 20% 20% 0%;
      }
+
+
+     /*div.filtres*/
+
+     div.filtres img
+     {
+         border-radius: 100%;
+         padding: 10px;
+         width: 1em;
+         background-color: #f2f2f2;
+         
+     }
+
+
+    /*div.hébergements*/
+
+     div.hébergements
+     {
+         background-color: #f2f2f2;
+         
+     }
+
+     div.hébergements img
+     {
+         display:flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         width: 13em;
+         border-radius: 20%;
+         
+     }
+
+     /*aside*/
+
+     aside
+     {
+         display: flex;
+         justify-content: right;
+     }
+
+     /*aside*/
+
+     /*div.activités*/
+     /*div.activités*/
+
+     /*footer*/
+
+    footer
+    {
+        background-color: #f2f2f2;
+        display: flex;
+        justify-content:space-between;
+        padding-right: 400px;
+        
+        
+    }
+
+    li
+    {
+        list-style-type: none;
+        padding: 10px;
+        display: flex;
+        
+    }
+
+    li.titre
+    {
+        font-weight: bold;
+    }
+
+    footer li.liste:hover
+    {
+        transition: 0.3s;
+        color: #0065fc;
+    }
+
+     /*footer*/
+
