@@ -85,7 +85,7 @@
 
     i.light
     {
-        color: #f2f2f2;
+        color: #deebff;
     }
 
      /*div.haut*/     
@@ -117,6 +117,7 @@
      input
      {
         font-weight:bold;
+
      }
 
     
@@ -129,16 +130,14 @@
      i#mapmarker
      {
          background-color: #dedede;
-         width: 30px;
-         height: 30px;
+         width: 6rem;
+         height: 1.6rem;
          display: flex;        
          border-top-left-radius: 50%;
          border-bottom-left-radius: 50%;
-         padding-top: 10px;
-         padding-left: 15px;
-         padding-right: 13px;
-        
-         
+         padding-top: 1rem;
+         padding-left: 1rem;
+         padding-right: 0.8rem;  
      }
 
 
@@ -147,8 +146,8 @@
          background-color: #0065fc;
          color: white;
          border-radius: 0% 20% 20% 0%;
-         width: 100px;
-         height: 40px;
+         width: 7rem;
+         height: 2.8rem;
          border: none;
      }
 
@@ -259,10 +258,6 @@
          width: 60%;
          height: 30%;
          margin:5px;
-        /* padding-top: 25px;
-         padding-right: 10px;
-         padding-left: 10px;
-         padding-bottom: 25px;*/
          display: inline-block;        
      }
 
@@ -281,12 +276,11 @@
          display:flex;
          flex-wrap: wrap;
          justify-content: space-around;
-         width: 80%;
-         height: 50%;
+         margin: auto;
+         width: 100%;
+         height: 55%;
          border-top-right-radius: 1.5rem;
-         border-top-left-radius: 1.5rem;
-         
-         
+         border-top-left-radius: 1.5rem;        
          
      }
 
@@ -298,7 +292,7 @@
          display: inline-block;
          margin: 1em;
          width: 250px;
-         height: 250px;  
+         height: 200px;  
          padding-top: 0.2rem;
          padding-left: 0.2rem;
          padding-right: 0.2rem;
@@ -308,13 +302,22 @@
      p.acco
      {
          padding-left: 0.8rem;
-         margin-bottom: 0.2rem;
+         margin-bottom: 0.3rem;
          padding-top: 0.2rem;
+         margin-top: 0.2rem;
+     }
+
+     span.acco
+     {
+         padding-left: 0.6rem;
+         padding-bottom: 0.3rem;
      }
 
      i
      {
-         padding-left: 0.8rem;
+         padding-left: 0.2rem;
+         padding-bottom: 0.2rem;
+         padding-top: 0.2rem;
      }
 
     
@@ -325,46 +328,62 @@
      {
          background-color: #f2f2f2;
          border-radius: 1.5rem;
-         padding: 2rem;
-         flex: 1.2;
+         padding: 0.5rem;
          width: 30%;
-         height: 60%;
+         height: 20%;
          display: inline-block;
-         flex-direction: column;
-
+         /*flex-direction: column;*/
+         margin-left: 2em;
+         margin-right: 0.5rem;
      }
+
+    
 
      aside img
      {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-around;
-         width: 30%;
+         flex: 8;
+         width: 45%;
+         height: 100%;         
          border-bottom-left-radius: 1.5rem;
          border-top-left-radius: 1.5rem;
      }
 
      div.box2
      {
+         display: flex;
          background-color: #ffff;
          border-radius: 1.5rem;
          box-shadow: 0.4em 0.4em 0.4em #dedede;
-         width: 90%;
-         height: 40%;
-         margin: 40px;
-         
+         margin: 2em;
+         padding-top: 0.2rem;
+         padding-left: 0.2rem;
+         padding-right: 2rem;
+         padding-bottom: 0.2rem;
+         height:10% ;
+
      }
 
-     div.pop_pic
+     div.aside
      {
-         flex-direction: row;
+         display: inline-flex;
      }
-
-
-     img.charte
+ 
+        i.chart
      {
-         width: 5%;
+            
+        font-size: 1.7rem;
+        padding-top: 2.2rem;
+        padding-left: 8rem;
+            
      }
+
+     h2.pop
+     {
+         padding-top: 1rem;
+         padding-left: 1.6rem;
+     }
+  
+     
 
     
 
@@ -374,44 +393,44 @@
 
      div.activities
      {
-         display: flex;
-         flex-wrap: wrap;
-         
+         margin: 25px;     
      }
+
+    
+
 
      div.activities img
      {
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
-        width: 2em;
-        padding: 3em;
-
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+        margin: auto;
+       
      }
 
      div.pic_activities
-     {
-        
+     {       
         border-radius: 1.5rem;
-        box-shadow: 0.4em 0.4em 0.4em #dedede;
-        width: 5em;
-
+        box-shadow: 0.4em 0.4em 0.4em #dedede;      
+        width: 20%;
+        height: 60%; 
     }
 
-/*div.activités
+    div.pic_activities p
+    {
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
 
-div.activities
-{
-    display: flex;
-    justify-content: space-between;
-}
+ 
+    
 
-div.pic_activities
-{
-    display: flex;
-    justify-content: space-around;
-    width: auto;
-    height: auto;
-}*/
+
 
 /*footer*/
 
