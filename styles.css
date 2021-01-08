@@ -3,8 +3,9 @@
     @font-face
     {
     font-family: 'Raleway';
-    src: url(images/police/Raleway-Italic-VariableFont_wght.ttf) format(".ttf"),
-         url(images/police/Raleway-VariableFont_wght.ttf) format(".ttf"); 
+    src:  url(images/police/Raleway-VariableFont_wght.ttf) format("truetype"),
+          url(images/police/Raleway-Italic-VariableFont_wght.ttf) format("truetype");
+         
     }
 
     body
@@ -41,7 +42,7 @@
          margin: 25px;                 
      }
 
-     li.h 
+     li.btn_ancre 
      {
          color: black;              
      }
@@ -52,7 +53,7 @@
          color: black;
      }
 
-     li.i a
+     li.btn_inscription a
      {
          color: #0065fc;
          font-weight: bold;
@@ -77,7 +78,7 @@
 
     i.light
     {
-        color: #deebff;
+        color: #f2f2f2;
     }
 
      /*div.haut*/     
@@ -107,7 +108,17 @@
      input
      {
         font-weight:bold;
+        font-size: 1rem;
+        border-left: none;
+        border-right: none;
+        border-color: #f2f2f2;
+        border-top-style: solid;
      }
+ 
+     button, input, select, textarea {
+        font-family : inherit;
+        font-size   : 100%;
+      }
 
     
      div.top img
@@ -116,17 +127,17 @@
          background-color: #f2f2f2;
      }
 
-     i#mapmarker
+     i#map_marker
      {
          background-color: #dedede;
-         width: 6rem;
+         width: 5rem;
          height: 1.6rem;
          display: flex;        
-         border-top-left-radius: 50%;
-         border-bottom-left-radius: 50%;
+         border-top-left-radius: 1rem;
+         border-bottom-left-radius: 1rem;
          padding-top: 1rem;
          padding-left: 1rem;
-         padding-right: 0.8rem;  
+         padding-right: 0.8rem;          
      }
 
 
@@ -134,8 +145,8 @@
      {
          background-color: #0065fc;
          color: white;
-         border-radius: 0% 20% 20% 0%;
-         width: 7rem;
+         border-radius: 0% 1rem 1rem 0%;
+         width: 9rem;
          height: 2.8rem;
          border: none;
      }
@@ -177,11 +188,43 @@
          color: #0065fc;
          background-color: #deebff;
          border-radius: 50%;
-         text-align: center;
-         padding-top: 15px;
-         padding-right: 15px;
-         padding-left: 15px;      
+         text-align: center;     
      }
+
+     i.fa-money-bill-wave
+     {
+        padding-top: 13px;
+        padding-right: 12px;
+        padding-left: 12px;
+        font-size: 1.3rem;
+     }
+
+     i.fa-child
+     {
+        padding-top: 12px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 1.6rem;
+     }
+
+     i.fa-heart
+     {
+        padding-top: 15px;
+        padding-right: 13px;
+        padding-left: 14px;
+        font-size: 1.4rem;
+     }
+
+     i.fa-dog
+     {
+        padding-top: 12px;
+        padding-right: 10px;
+        padding-left: 12px;
+        font-size: 1.5rem;
+     }
+
+     
+   
 
      
      p.f
@@ -240,15 +283,11 @@
          display: inline-block;        
      }
 
-     h2.acco
+     h2.acco, h3.acco
      {
          padding-left: 25px;
      }
 
-     h3.acco
-     {
-         padding-left: 25px;
-     }
 
      div.accommodation img
      {
@@ -259,7 +298,8 @@
          width: 100%;
          height: 55%;
          border-top-right-radius: 1.5rem;
-         border-top-left-radius: 1.5rem;                
+         border-top-left-radius: 1.5rem; 
+         object-fit:cover;               
      }
 
      div.box1
@@ -312,14 +352,19 @@
          display: inline-block;       
          margin-left: 2em;
          margin-right: 0.5rem;
+        
      }
 
      aside img
      {        
          width: 45%;
-         height: 100%;         
+         height: auto;         
          border-bottom-left-radius: 1.5rem;
          border-top-left-radius: 1.5rem;
+         object-fit: cover;
+         position: relative;
+         top: 50px;
+       
      }
 
      div.box2
@@ -336,11 +381,22 @@
          padding-left: 0.2rem;
          padding-right: 2rem;
          padding-bottom: 0.2rem;
+         position: relative;
      }   
+
+     p.popu
+     {
+        position: relative;
+        left: 200px;
+        bottom: 20px;
+     }
 
      span.aside
      {
          text-align: right;
+         position: relative;
+         left: 200px;
+         bottom: 20px;
      }
 
 
@@ -368,35 +424,39 @@
 
      div.activities
      {
-         margin: 1.5rem;            
+         margin: 1.5rem;                   
      }
 
      div.box3
      {
         display: flex;
-        flex-direction: row;
         padding: 2rem;      
+     }
+
+     .box3:nth-child(5)
+     {
+         flex: 2;
+     }
+     .box3:nth-child(6)
+     {
+         flex: 1;
      }
 
      div.activities img
      {
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
-        display:flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        height: 30%;
-        margin: auto;   
+        height: 80%;    
+        object-fit: cover;
      }
 
      div.pic_activities
      {       
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede;      
-        width: 20%;
-        height: 60%; 
-        margin: 1.5rem;    
+          flex: 1;
     }
 
     div.pic_activities p
@@ -406,6 +466,41 @@
         padding-left: 1rem;
     }
 
+    div.slice_1, div.slice_2, div.slice_3, div.slice_4
+    {
+        padding: 1.5rem;
+    }
+
+    div.slice_1
+    {
+      
+      align-items: stretch;
+     
+
+    }
+    
+    div.slice_2
+    {
+        
+        flex-direction: column;
+        width: max-content;
+     
+    }
+
+    div.slice_3
+    {
+        
+        width: max-content;
+      
+    }
+
+    div.slice_4
+    {
+        
+        flex-direction: column;
+        width: max-content;
+        
+    }
  
     
 
