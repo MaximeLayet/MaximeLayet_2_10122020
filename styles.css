@@ -355,16 +355,37 @@
         
      }
 
+     i.chart
+     {          
+        font-size: 1.7rem;
+        padding-top: 2.2rem;
+        padding-left: 8rem;           
+     }
+
+     h2.pop
+     {
+         padding-top: 1rem;
+         padding-left: 1.6rem;
+     }
+
      aside img
-     {        
-         width: 45%;
-         height: auto;         
-         border-bottom-left-radius: 1.5rem;
-         border-top-left-radius: 1.5rem;
-         object-fit: cover;
-         position: relative;
-         top: 50px;
-       
+     {               
+         display:flex;
+         flex-wrap: wrap;
+         border-radius: 1.5rem 0 0 1.5rem;
+         position: absolute;
+         width: 33%;
+         height: 100%;
+         padding: 0.5rem;
+         object-fit: cover;                 
+     }
+
+     div.pop_pic
+     {
+        display: flex;
+        align-items: stretch;
+        height: 100%;
+        overflow: auto;
      }
 
      div.box2
@@ -384,19 +405,23 @@
          position: relative;
      }   
 
-     p.popu
+     div.test_1
      {
         position: relative;
-        left: 200px;
-        bottom: 20px;
+        /*left: 200px;
+        bottom: 20px;*/
+        display: flex;
+        flex-direction: column;
      }
 
      span.aside
      {
-         text-align: right;
+         /*text-align: right;
          position: relative;
          left: 200px;
-         bottom: 20px;
+         bottom: 20px;*/
+     /*    display: flex;*/
+         
      }
 
 
@@ -405,18 +430,7 @@
          display: inline-flex;
      }
  
-        i.chart
-     {          
-        font-size: 1.7rem;
-        padding-top: 2.2rem;
-        padding-left: 8rem;           
-     }
-
-     h2.pop
-     {
-         padding-top: 1rem;
-         padding-left: 1.6rem;
-     }
+   
   
 /*aside*/
 
@@ -424,87 +438,181 @@
 
      div.activities
      {
-         margin: 1.5rem;                   
+        padding: 2rem;
+        width: 96%;
+        height: 30%;
+        /*margin: */
+                 
      }
 
      div.box3
      {
-        display: flex;
-        padding: 2rem;      
+        display: flex;    
      }
 
-     .box3:nth-child(5)
-     {
-         flex: 2;
-     }
-     .box3:nth-child(6)
-     {
-         flex: 1;
-     }
-
-     div.activities img
-     {
-        border-top-right-radius: 1.5rem;
-        border-top-left-radius: 1.5rem;
-        justify-content: space-around;
-        width: 100%;
-        height: 80%;    
-        object-fit: cover;
-     }
-
-     div.pic_activities
-     {       
+    div.pic_activities1
+    {
         border-radius: 1.5rem;
-        box-shadow: 0.4em 0.4em 0.4em #dedede;      
-          flex: 1;
+        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        width: 100%;
+        margin: 1.5rem;
+        height: 72.5%;
     }
 
-    div.pic_activities p
+    div.activities img.pic_1
     {
-        font-weight: bold;
+       border-top-right-radius: 1.5rem;
+       border-top-left-radius: 1.5rem;
+       justify-content: space-around;
+       width: 100%;
+       height: 90%;    
+       object-fit: cover;
+    }
+
+    div.pic_activities1 p
+    {
+        font-weight: bolder;
         padding-bottom: 0.5rem;
         padding-left: 1rem;
     }
 
-    div.slice_1, div.slice_2, div.slice_3, div.slice_4
+    div.pic_activities2
+    {
+        border-radius: 1.5rem;
+        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        width: 100%;
+        margin: 1.5rem;
+        height: 40%;
+    }
+
+    div.activities img.pic_2
+    {
+       border-top-right-radius: 1.5rem;
+       border-top-left-radius: 1.5rem;
+       justify-content: space-around;
+       width: 100%;
+       height: 85%;    
+       object-fit: cover;
+    }
+
+    div.pic_activities2 p
+    {
+        font-weight: bolder;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    div.pic_activities3
+    {
+        border-radius: 1.5rem;
+        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        width: 100%;
+        margin: 1.5rem;
+        height: 30%;
+    }
+    div.activities img.pic_3
+    {
+       border-top-right-radius: 1.5rem;
+       border-top-left-radius: 1.5rem;
+       justify-content: space-around;
+       width: 100%;
+       height: 80%;    
+       object-fit: cover;
+    }
+
+    div.pic_activities3 p
+    {
+        font-weight: bolder;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    div.pic_activities4
+    {
+        border-radius: 1.5rem;
+        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        width: 100%;
+        margin: 1.5rem;
+        height: 72.5%;
+    }
+
+    div.activities img.pic_4
+    {
+       border-top-right-radius: 1.5rem;
+       border-top-left-radius: 1.5rem;
+       justify-content: space-around;
+       width: 100%;
+       height: 90%;    
+       object-fit: cover;
+    }
+
+    div.pic_activities4 p
+    {
+        font-weight: bolder;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    div.pic_activities5
+    {
+        border-radius: 1.5rem;
+        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        width: 100%;
+        margin: 1.5rem;
+        height: 35%;
+    }
+
+    div.activities img.pic_5
+    {
+       border-top-right-radius: 1.5rem;
+       border-top-left-radius: 1.5rem;
+       justify-content: space-around;
+       width: 100%;
+       height: 80%;    
+       object-fit: cover;
+    }
+
+    div.pic_activities5 p
+    {
+        font-weight: bolder;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
+
+    div.pic_activities6
+    {
+        border-radius: 1.5rem;
+        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        width: 100%;
+        margin: 1.5rem;
+        height: 35%;
+    }
+
+    div.activities img.pic_6
+    {
+       border-top-right-radius: 1.5rem;
+       border-top-left-radius: 1.5rem;
+       justify-content: space-around;
+       width: 100%;
+       height: 80%;    
+       object-fit: cover;
+    }
+
+    div.pic_activities6 p
+    {
+        font-weight: bolder;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+    }
+
+
+
+   div.slice_1, div.slice_2, div.slice_3, div.slice_4
     {
         padding: 1.5rem;
     }
 
-    div.slice_1
-    {
-      
-      align-items: stretch;
-     
-
-    }
-    
-    div.slice_2
-    {
-        
-        flex-direction: column;
-        width: max-content;
-     
-    }
-
-    div.slice_3
-    {
-        
-        width: max-content;
-      
-    }
-
-    div.slice_4
-    {
-        
-        flex-direction: column;
-        width: max-content;
-        
-    }
- 
-    
-
-
+   
 
 /*footer*/
 
