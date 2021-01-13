@@ -1,33 +1,44 @@
-/*Général css*/
+/*Globale*/
 
     @font-face
     {
-    font-family: 'Raleway';
+    font-family:'Raleway';
     src:  url(images/police/Raleway-VariableFont_wght.ttf) format("truetype"),
-          url(images/police/Raleway-Italic-VariableFont_wght.ttf) format("truetype");
-         
+          url(images/police/Raleway-Italic-VariableFont_wght.ttf) format("truetype");       
     }
+
+
+/*Responsive Iphone8*/
+    @media screen and (max-width:375px)
+    {
+        #blocpage
+        {
+            width: 100%;                  
+        }
+
+        footer 
+        {
+            flex-direction: column;
+        }
+    }
+
+/*Responsive tablette*/
+
+
+
 
     body
     {
         font-family: 'Raleway', sans-serif;
     }
 
-    div#bloc_page
-    {
-        margin: auto;
-        width: 100%;
-        flex-wrap: wrap; 
-    }
-
-    
-    /*header*/
 
     header
     {
         display: flex;
         justify-content: space-between;
-        align-items: flex-end;       
+        align-items: flex-end;  
+        width: 100%;
     }
 
     header img 
@@ -115,7 +126,8 @@
         border-top-style: solid;
      }
  
-     button, input, select, textarea {
+    button, input, select, textarea
+      {
         font-family : inherit;
         font-size   : 100%;
       }
@@ -368,26 +380,6 @@
          padding-left: 1.6rem;
      }
 
-     aside img
-     {               
-         display:flex;
-         flex-wrap: wrap;
-         border-radius: 1.5rem 0 0 1.5rem;
-         position: absolute;
-         width: 33%;
-         height: 100%;
-         padding: 0.5rem;
-         object-fit: cover;                 
-     }
-
-     div.pop_pic
-     {
-        display: flex;
-        align-items: stretch;
-        height: 100%;
-        overflow: auto;
-     }
-
      div.box2
      {
          display: flex;
@@ -405,32 +397,37 @@
          position: relative;
      }   
 
-     div.test_1
+     aside img
+     {               
+         display:flex;
+         flex-wrap: wrap;
+         border-radius: 1.5rem 0 0 1.5rem;
+         position: relative;
+         width: 33%;
+         height: 80%;
+         padding: 0.5rem;
+         object-fit: cover;  
+         position: absolute;  
+         left:0;             
+     }
+
+    
+
+     span.prix_et_lieu
      {
-        position: relative;
-        /*left: 200px;
-        bottom: 20px;*/
-        display: flex;
-        flex-direction: column;
+         margin: 0.3rem;
+         position: absolute;
+         right: 20px;         
      }
 
      span.aside
      {
-         /*text-align: right;
-         position: relative;
-         left: 200px;
-         bottom: 20px;*/
-     /*    display: flex;*/
-         
-     }
+        padding-top: 2rem;  
+        position: absolute;
+        right:20px;       
+     } 
 
 
-     div.aside
-     {
-         display: inline-flex;
-     }
- 
-   
   
 /*aside*/
 
@@ -441,7 +438,6 @@
         padding: 2rem;
         width: 96%;
         height: 30%;
-        /*margin: */
                  
      }
 
