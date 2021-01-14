@@ -8,19 +8,7 @@
     }
 
 
-/*Responsive Iphone8*/
-    @media screen and (max-width:375px)
-    {
-        #blocpage
-        {
-            width: 100%;                  
-        }
 
-        footer 
-        {
-            flex-direction: column;
-        }
-    }
 
 /*Responsive tablette*/
 
@@ -186,7 +174,6 @@
          border-style: solid ;
          border-radius: 2rem;
          width: auto;
-         height: 50px;
          display: flex;
          margin: 15px;
          padding-right:20px;
@@ -248,8 +235,11 @@
 
      div.item:hover
      {
-         box-shadow:inset 50px 0 0 0 #f2f2f2;
-         transition: 0.5s;     
+         box-shadow:inset 50px 0 0 0 #0065fc;
+         transition: 0.5s;    
+         border-style: solid 8px;
+         border-color: #deebff;
+         background-color: #f2f2f2;
      }
 
 
@@ -282,6 +272,14 @@
          padding-left: 15px;       
      }
 
+ /*div.acco_et_aside*/ 
+
+     div.acco_et_aside
+     {
+         display: flex;
+         justify-content: space-between;
+     }
+
  /*div.accommodation*/
 
      div.accommodation
@@ -291,7 +289,7 @@
          padding: 2rem;
          width: 60%;
          height: 30%;
-         margin:5px;
+         margin:2px;
          display: inline-block;        
      }
 
@@ -362,7 +360,7 @@
          width: 30%;
          height: 20%;
          display: inline-block;       
-         margin-left: 2em;
+         margin-left: 1em;
          margin-right: 0.5rem;
         
      }
@@ -378,6 +376,13 @@
      {
          padding-top: 1rem;
          padding-left: 1.6rem;
+         margin-bottom:0;
+     }
+
+     div.aside
+     {
+         display: flex;
+       
      }
 
      div.box2
@@ -395,37 +400,49 @@
          padding-right: 2rem;
          padding-bottom: 0.2rem;
          position: relative;
+         height: 147px;
      }   
+
+     div.descriptif
+     {
+         position: absolute;
+         right: 0;
+         top: 0;
+         padding-right: 4rem;
+     }
 
      aside img
      {               
          display:flex;
          flex-wrap: wrap;
          border-radius: 1.5rem 0 0 1.5rem;
-         position: relative;
-         width: 33%;
-         height: 80%;
-         padding: 0.5rem;
-         object-fit: cover;  
-         position: absolute;  
-         left:0;             
+         width: 150px;
+         height: 147px;   
+         object-fit: cover;                    
      }
 
-    
 
-     span.prix_et_lieu
-     {
-         margin: 0.3rem;
-         position: absolute;
-         right: 20px;         
-     }
 
-     span.aside
-     {
-        padding-top: 2rem;  
-        position: absolute;
-        right:20px;       
-     } 
+   span.aside
+   {
+      position: relative;
+      bottom: 8;
+   }
+
+   p.popu_1
+   {
+       margin-top: 1rem;
+       margin-bottom: 0rem;
+       
+   }
+
+   p.popu_2
+   {
+       margin-top: 0.5rem;
+       margin-bottom: 2.5rem;
+       ;
+   }
+ 
 
 
   
@@ -436,8 +453,7 @@
      div.activities
      {
         padding: 2rem;
-        width: 96%;
-        height: 30%;
+        width: 96%;  
                  
      }
 
@@ -450,9 +466,10 @@
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 100%;
+        width: 325px;
         margin: 1.5rem;
-        height: 72.5%;
+        margin-left:0;
+        height: 425px;
     }
 
     div.activities img.pic_1
@@ -461,7 +478,7 @@
        border-top-left-radius: 1.5rem;
        justify-content: space-around;
        width: 100%;
-       height: 90%;    
+       height: 375px;    
        object-fit: cover;
     }
 
@@ -476,9 +493,9 @@
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 100%;
+        width: 325px;
         margin: 1.5rem;
-        height: 40%;
+        height: 250px;
     }
 
     div.activities img.pic_2
@@ -487,7 +504,7 @@
        border-top-left-radius: 1.5rem;
        justify-content: space-around;
        width: 100%;
-       height: 85%;    
+       height: 200px;    
        object-fit: cover;
     }
 
@@ -502,9 +519,9 @@
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 100%;
+        width: 325px;
         margin: 1.5rem;
-        height: 30%;
+        height: 150px;
     }
     div.activities img.pic_3
     {
@@ -512,7 +529,7 @@
        border-top-left-radius: 1.5rem;
        justify-content: space-around;
        width: 100%;
-       height: 80%;    
+       height: 100px;    
        object-fit: cover;
     }
 
@@ -527,9 +544,9 @@
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 100%;
+        width:325px;
         margin: 1.5rem;
-        height: 72.5%;
+        height: 425px;
     }
 
     div.activities img.pic_4
@@ -538,7 +555,7 @@
        border-top-left-radius: 1.5rem;
        justify-content: space-around;
        width: 100%;
-       height: 90%;    
+       height: 375px;    
        object-fit: cover;
     }
 
@@ -553,9 +570,9 @@
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 100%;
+        width: 325px;
         margin: 1.5rem;
-        height: 35%;
+        height: 200px;
     }
 
     div.activities img.pic_5
@@ -564,7 +581,7 @@
        border-top-left-radius: 1.5rem;
        justify-content: space-around;
        width: 100%;
-       height: 80%;    
+       height: 150px;    
        object-fit: cover;
     }
 
@@ -579,9 +596,9 @@
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 100%;
+        width: 325px;
         margin: 1.5rem;
-        height: 35%;
+        height: 200px;
     }
 
     div.activities img.pic_6
@@ -590,7 +607,7 @@
        border-top-left-radius: 1.5rem;
        justify-content: space-around;
        width: 100%;
-       height: 80%;    
+       height: 150px;    
        object-fit: cover;
     }
 
@@ -603,11 +620,7 @@
 
 
 
-   div.slice_1, div.slice_2, div.slice_3, div.slice_4
-    {
-        padding: 1.5rem;
-    }
-
+ 
    
 
 /*footer*/
@@ -643,3 +656,18 @@
 
  /*footer*/
 
+/*Responsive Iphone8*/
+
+@media screen and (max-width:480px)
+{
+    #blocpage
+    {
+        width: 100%;                  
+    }
+
+    footer 
+    {
+     
+        flex-direction: column;
+    }
+}
