@@ -7,14 +7,6 @@
           url(images/police/Raleway-Italic-VariableFont_wght.ttf) format("truetype");       
     }
 
-
-
-
-/*Responsive tablette*/
-
-
-
-
     body
     {
         font-family: 'Raleway', sans-serif;
@@ -286,11 +278,11 @@
      {
          background-color: #f2f2f2;
          border-radius: 1.5rem;
-         padding: 2rem;
-         width: 60%;
-         height: 30%;
+         padding-left: 2rem;
+         width: 1000px;
+         height: 650px;
          margin:2px;
-         display: inline-block;        
+         display: inline-block;    
      }
 
      h2.acco, h3.acco
@@ -320,7 +312,7 @@
          display: inline-block;
          margin: 1em;
          width: 250px;
-         height: 200px;  
+         height: 215px; 
          padding-top: 0.2rem;
          padding-left: 0.2rem;
          padding-right: 0.2rem;
@@ -339,6 +331,7 @@
      {
          padding-left: 0.6rem;
          padding-bottom: 0.3rem;
+         display: flex;
      }
 
      i
@@ -357,8 +350,7 @@
          background-color: #f2f2f2;
          border-radius: 1.5rem;
          padding: 0.5rem;
-         width: 30%;
-         height: 20%;
+         width: 450px;      
          display: inline-block;       
          margin-left: 1em;
          margin-right: 0.5rem;
@@ -382,6 +374,7 @@
      div.aside
      {
          display: flex;
+         
        
      }
 
@@ -400,66 +393,85 @@
          padding-right: 2rem;
          padding-bottom: 0.2rem;
          position: relative;
-         height: 147px;
      }   
 
-     div.descriptif
+     div.descriptif_1
      {
          position: absolute;
          right: 0;
          top: 0;
-         padding-right: 4rem;
+         padding-right:6rem;
      }
+
+     div.descriptif_2, div.descriptif_3
+     {
+         position: absolute;
+         right: 0;
+         top: 0;
+         padding-right: 5rem;
+     }
+
+
 
      aside img
      {               
          display:flex;
          flex-wrap: wrap;
          border-radius: 1.5rem 0 0 1.5rem;
-         width: 150px;
-         height: 147px;   
-         object-fit: cover;                    
+         width: 125px;
+         height: 140px;   
+         object-fit: cover;  
+                          
      }
 
 
 
-   span.aside
+  span.aside
    {
-      position: relative;
-      bottom: 8;
+     /* position: relative;
+      bottom: 10;
+      left: 4;
+      bottom:2;*/
+      display: flex;
+      padding-left: 20px;
+      margin-top: -10px;
    }
 
    p.popu_1
    {
        margin-top: 1rem;
        margin-bottom: 0rem;
-       
+       margin-left:1.5rem;
+       font-size: 1.1rem;
+
    }
 
    p.popu_2
    {
        margin-top: 0.5rem;
        margin-bottom: 2.5rem;
-       ;
+       margin-left:1.5rem;
+       font-size: 0.9rem;
    }
  
 
 
   
-/*aside*/
+
 
 /*div.activités*/
 
      div.activities
      {
         padding: 2rem;
-        width: 96%;  
+        width: 800px;
                  
      }
 
      div.box3
      {
-        display: flex;    
+        display: flex;  
+        
      }
 
     div.pic_activities1
@@ -618,11 +630,7 @@
         padding-left: 1rem;
     }
 
-
-
  
-   
-
 /*footer*/
 
     footer
@@ -656,18 +664,46 @@
 
  /*footer*/
 
+/*Responsive tablette2*/
+
+@media screen and (max-width:1024px)
+{}
+
+ /*Responsive tablette1*/
+
+@media screen and (max-width:768px)
+{}
 /*Responsive Iphone8*/
 
 @media screen and (max-width:480px)
 {
-    #blocpage
+
+    /*Hébergements480px*/
+
+    div.acco
     {
-        width: 100%;                  
+        background-color: white;
+    }
+    /*Activité 480px*/
+
+    div.activities
+    {
+        display: flex;
+        flex-direction: column;
     }
 
+    div.slice_1, div.slice_2, div.slice_3, div.slice_4
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+   
+    /*footer 480px*/
     footer 
     {
-     
+        width: 100%;
         flex-direction: column;
+        display:flex;
     }
 }
