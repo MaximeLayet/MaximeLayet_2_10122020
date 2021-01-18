@@ -12,6 +12,7 @@
         font-family: 'Raleway', sans-serif;
     }
 
+/*head*/
 
     header
     {
@@ -57,6 +58,8 @@
         padding-top: 40px;  
         color: #0065fc;   
      }
+
+   
 
 
      
@@ -464,20 +467,18 @@
      div.activities
      {
         padding: 2rem;
-        width: 800px;
-                 
+        width: 800px;               
      }
 
      div.box3
      {
-        display: flex;  
-        
+        display: flex;      
      }
 
     div.pic_activities1
     {
         border-radius: 1.5rem;
-        box-shadow: 0.4em 0.4em 0.4em #dedede; 
+        box-shadow: 0.4em 0.4em 0.4em #dedede;
         width: 325px;
         margin: 1.5rem;
         margin-left:0;
@@ -535,6 +536,7 @@
         margin: 1.5rem;
         height: 150px;
     }
+
     div.activities img.pic_3
     {
        border-top-right-radius: 1.5rem;
@@ -678,32 +680,202 @@
 @media screen and (max-width:480px)
 {
 
-    /*Hébergements480px*/
-
-    div.acco
+    #bloc_page
     {
-        background-color: white;
+        width: 100%;
     }
+
+    /*head*/
+
+    header
+    
+    {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul li
+    {
+        list-style-type: none;
+                 
+    }
+
+    li.btn_ancre
+    {
+       border-bottom: 2px solid #f2f2f2;      
+    }
+
+    /*Filtres*/
+
+    div.filters
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /*section480px*/
+
+    
+
+    div.acco_et_aside
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-bottom:1050px ;
+    }
+
+    
+   
+
+
+    /*top480px*/
+
+    div.top
+    {        
+        margin-left: 10px;
+    }
+
+    div.top h1
+    {
+        margin-bottom: 1px;
+    }
+
+    div.top h2
+    {
+        
+        margin-top:15px;
+        font-size: 1.2rem;
+        margin-bottom: 25px;      
+    }
+
+    i.fa-search
+    {
+        background-color: #0065fc;
+         color: white;
+         border-radius:1rem ;
+         width: 2rem;
+         border: none;
+         padding-top: 30px;
+         position: absolute;
+         top: 265px;
+         left: 210px;
+         display: flex;
+         justify-content: center;
+    }
+
+    input.send
+    {
+       display: none;
+    }
+
+  
+
+    /*populaire480px*/
+
+    aside
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+       
+    }
+
+    div.box2
+    {
+        width: 80%;
+        margin-left:1em;
+        margin-top: 2em;
+        margin-right: 2em;
+        margin-bottom: 2em;
+    }
+
+    div.descriptif_1
+    {
+        padding-right: 3rem;
+    }
+  
+    div.descriptif_2
+    {
+        padding-right: 2rem;
+    }
+
+    div.descriptif_3
+    {
+        padding-right: 2rem;
+    }
+
+    /*Hébergements480px*/ 
+
+     div.accommodation
+     {
+         background-color: white;
+         justify-content: space-between;
+         width: 100%;
+         padding-left: 0rem;
+         margin: 0rem;
+     }
+
+     h2
+    {
+        margin-top:50px;
+    }
+     div.box1
+     {
+         width: 90%;
+     }
+         
+
     /*Activité 480px*/
 
-    div.activities
+   div.activities
+    {
+       padding: 0rem;
+       width: 100%;
+    }
+
+    div.box3
     {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0rem;
+    }
+
+    div.pic_activities1
+    {
+        margin-left: 1.5rem;
+    }
+
+    div.pic_activities1, div.pic_activities2, div.pic_activities3, div.pic_activities4, div.pic_activities5, div.pic_activities6
+    {
+        height: 190px;
+    }
+
+    div.activities img.pic_1, div.activities img.pic_2, div.activities img.pic_3, div.activities img.pic_4, div.activities img.pic_5, div.activities img.pic_6
+    {
+        height: 130px;
     }
 
     div.slice_1, div.slice_2, div.slice_3, div.slice_4
     {
         display:flex;
         flex-direction: column;
+        width:100%;
+        padding-right: 0rem;
     }
 
    
     /*footer 480px*/
+
     footer 
     {
-        width: 100%;
         flex-direction: column;
         display:flex;
+        width: 100%;
+        padding-right: 0rem;
     }
 }
