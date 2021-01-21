@@ -126,7 +126,6 @@
      {
          background-color: #dedede;
          width: 5rem;
-         height: 1.6rem;
          display: flex;        
          border-top-left-radius: 1rem;
          border-bottom-left-radius: 1rem;
@@ -160,6 +159,12 @@
          display: flex;
          flex-wrap: wrap;
          padding-top: 30px;
+     }
+
+     div.button
+     {
+         display: flex;
+         flex-wrap: wrap;
      }
 
      div.filters h2
@@ -690,22 +695,33 @@
 
     header img
     {
-        width: 100px;
-        margin-left: 1rem;
+        width: 125px;
+        margin-right: 13rem;
     }
 
     header
     
     {   
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
     ul.top_page
     {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        flex-wrap: wrap;
+        position: relative;
+        font-size: 1.3rem;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    a.top:hover
+    {
+        
+        border-top: 0;
+        transition: 0s;       
+        padding-top: 0;  
+        color: #0065fc;   
     }
 
   
@@ -719,6 +735,23 @@
     {
        border-bottom: 2px solid #f2f2f2;   
        flex-wrap: wrap-reverse; 
+       margin-left: 0;
+       margin-right: 0;
+       padding-left: 3rem;
+       padding-right: 2.5rem;
+    }
+
+    li.btn_ancre:hover
+    {
+        border-bottom: #0065fc solid 2px;
+    }
+
+
+    li.btn_inscription
+    {
+        position: absolute;
+        right: 20px;
+        bottom: 95px;
     }
 
    /* li.btn:hover
@@ -726,10 +759,7 @@
         border-bottom:2px solid #0065fc;   
     }*/
 
-    a.top:hover
-    {
-        display: none;
-    }
+  
 
    
 
@@ -744,7 +774,6 @@
         flex-wrap: wrap;
         flex-direction: column-reverse;
         width: 100%;
-        margin-bottom:1050px ;
     }
 
     
@@ -756,6 +785,7 @@
     div.top
     {        
         margin-left: 10px;
+        padding-top: 0%;
     }
 
     div.top h1
@@ -779,18 +809,9 @@
     i.fa-search
     {
          background-color: #0065fc;
-         font-size:0.9rem;
          color: white;
          border-radius:1rem ;
-         width: 2rem;
-         border: none;
-         padding-left:0.6rem;
-         padding-right: 0.6rem;
-         padding-top: 1rem;
-         padding-bottom:1rem;
-         position: absolute;
-         top: 415px;
-         left: 210px;
+         padding:1rem;
          display: flex;
          justify-content: center;
     }
@@ -807,6 +828,19 @@
          display: flex;
          flex-wrap: wrap;  
          width: 100%;
+         padding-top: 0;
+     }
+
+     div.button
+     {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     div.item
+     {
+         margin-left: 0;
+         margin-right: 12px;
      }
 
      div.search_filters
@@ -887,21 +921,28 @@
         margin-top: 2em;
         margin-right: 2em;
         margin-bottom: 2em;
+        position: relative;
     }
 
     div.descriptif_1
     {
-        padding-right: 3rem;
+        position: absolute;
+        right:-55px;
+        bottom: 150px;
     }
   
     div.descriptif_2
     {
-        padding-right: 2rem;
+        position: absolute;
+        right: -50px;
+        bottom: 150px;
     }
 
     div.descriptif_3
     {
-        padding-right: 2rem;
+        position: absolute;
+        right: -50px;
+        bottom: 150px;
     }
 
     /*Hébergements480px*/ 
@@ -913,12 +954,10 @@
          width: 100%;
          padding-left: 0rem;
          margin: 0rem;
+         height: auto;
      }
 
-     h2
-    {
-        margin-top:50px;
-    }
+     
      div.box1
      {
          width: 90%;
