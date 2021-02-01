@@ -268,7 +268,7 @@
      div.acco_et_aside
      {
          display: flex;
-         justify-content: space-between;
+         justify-content: space-around;
      }
 
  /*div.accommodation*/
@@ -387,6 +387,7 @@
          padding-right: 2rem;
          padding-bottom: 0.2rem;
          position: relative;
+         min-width: 340px;
      }   
 
      div.descriptif_1
@@ -442,12 +443,15 @@
 
      div.activities
      {
-        width: 100%;               
+        width: 100%;    
+        display: flex;
+        flex-wrap: wrap;           
      }
 
      div.box3
      {
-        display: flex;      
+        display: flex;    
+        justify-content: center;  
      }
 
     div.pic_activities1
@@ -649,7 +653,7 @@
          width: 99%;
      }
 
-     /*Filtres*/
+     /*Filtres1024px*/
 
      .button
      {
@@ -727,7 +731,7 @@
          margin-top: 0.5rem;
      }
 
-     /*hébergement1360px*/
+     /*hébergement1024px*/
 
      div.accommodation
      {
@@ -807,7 +811,7 @@
 
     footer
     {
-        padding-right: 40px;
+        padding-right: 10px;
     }
 }
 
@@ -874,7 +878,10 @@
          padding-left: 0.2rem;
          padding-bottom: 0.2rem;
          position: relative;
-         width: 90%;*border-radius: 1.5rem;
+         width: 90%;
+         border-radius: 1.5rem;
+         min-width:605px;
+         max-width: 321px;
      }   
 
     div.descriptif_1
@@ -902,7 +909,8 @@
          height: 13.4rem;   
          width: 380px;
          object-fit: cover;      
-         margin-left: 0;                  
+         margin-left: 0; 
+         max-width: 380px;                 
      }
 
      span.aside
@@ -972,16 +980,6 @@
 
     /*activités780px*/
 
-    div.activities
-    {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 1rem;
-        padding-left: 0;
-        position: relative;
-    }
-
     div.activities h2
     {
         padding-left: 2rem;
@@ -1046,7 +1044,7 @@
 
     #bloc_page
     {
-        width: 90%;
+        width: 100%;
     }
 
     /*head480px*/
@@ -1054,7 +1052,7 @@
     header img
     {
         width: 125px;
-        margin-right: 12rem;
+        margin-right: 14rem;
     }
 
     header
@@ -1068,8 +1066,8 @@
         position: relative;
         font-size: 1.3rem;
         display: flex;
-        width: 100%;
         flex-direction: row;
+        margin-right:2rem;
     }
 
     a.top:hover
@@ -1088,8 +1086,7 @@
 
     li.btn_ancre
     {
-       border-bottom: 2px solid #f2f2f2;   
-       flex-wrap: wrap-reverse; 
+       border-bottom: 2px solid #f2f2f2; 
        margin-left: 0;
        margin-right: 0;
        padding-right: 2.5rem;
@@ -1103,7 +1100,7 @@
     li.btn_inscription
     {
         position: absolute;
-        right: 20px;
+        right: -25px;
         bottom: 95px;
     }
 
@@ -1162,7 +1159,7 @@
      div.item
      {
          margin-left: 0;
-         margin-right: 12px;
+         margin-right: 10px;
      }
 
      div.search_filters
@@ -1198,7 +1195,7 @@
          font-size: 0.9rem;
      }
 
-     /*Hébergement et populaire*/
+     /*Hébergement et populaire480px*/
 
      div.acco_et_aside
      {
@@ -1212,7 +1209,6 @@
 
     aside
     {
-        width: 100%;
         border-radius: 0 0 0 0;
     }
 
@@ -1279,15 +1275,12 @@
      {
          background-color: #ffff;
          justify-content: space-between;
-         width: 100%;
-         padding-left: 0rem;
-         margin: 0rem;
          height: auto;
+         padding-left: 0;
      }
 
      div.box1
      {
-         width: 90%;
          margin-left:2rem;
      }
         
@@ -1296,7 +1289,7 @@
    div.activities
     {
        padding: 0rem;
-       width: 100%;
+       max-width: 375px;
     }
 
     div.box3
@@ -1304,8 +1297,8 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-left: 0rem;
         width: 100%;
+        max-width: 375px;
     }
 
     div.pic_activities1
@@ -1326,9 +1319,7 @@
     div.slice_1, div.slice_2, div.slice_3, div.slice_4
     {
         display:flex;
-        flex-direction: column;
-        width:100%;
-        padding-right: 1rem;
+        flex-direction: column;    
     }
 
     div.slice_2, div.slice_3, div.slice_4
