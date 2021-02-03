@@ -59,7 +59,7 @@
      a.top:hover
      {
         transition:0.3s;
-        border-top:2px solid #0065fc;       
+        border-top:2px solid #0065fc ;       
         padding-top: 40px;  
         color: #0065fc;   
      }
@@ -448,6 +448,12 @@
         flex-wrap: wrap;           
      }
 
+     .slice_1, .slice_2, .slice_3, .slice_4
+     {
+         display: flex;
+         flex-wrap: wrap;
+     }
+
      div.box3
      {
         display: flex;    
@@ -461,16 +467,14 @@
         width: 325px;
         margin: 1.5rem;
         margin-left:0;
-        height: 425px;
     }
 
-    div.activities img.pic_1
+    div.activities img.pic_1, div.activities img.pic_4
     {
        border-top-right-radius: 1.5rem;
        border-top-left-radius: 1.5rem;
-       justify-content: space-around;
        width: 100%;
-       height: 375px;    
+       height: 390px;    
        object-fit: cover;
     }
 
@@ -500,7 +504,7 @@
        object-fit: cover;
     }
 
-    div.pic_activities2 p
+    div.pic_activities2 p,  div.pic_activities4 p
     {
         font-weight: bolder;
         padding-bottom: 0.5rem;
@@ -539,27 +543,10 @@
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
         width:325px;
         margin: 1.5rem;
-        height: 425px;
     }
 
-    div.activities img.pic_4
-    {
-       border-top-right-radius: 1.5rem;
-       border-top-left-radius: 1.5rem;
-       justify-content: space-around;
-       width: 100%;
-       height: 375px;    
-       object-fit: cover;
-    }
-
-    div.pic_activities4 p
-    {
-        font-weight: bolder;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-    }
-
-    div.pic_activities5
+   
+    div.pic_activities5, div.pic_activities6
     {
         border-radius: 1.5rem;
         box-shadow: 0.4em 0.4em 0.4em #dedede; 
@@ -568,7 +555,7 @@
         height: 200px;
     }
 
-    div.activities img.pic_5
+    div.activities img.pic_5, div.activities img.pic_6
     {
        border-top-right-radius: 1.5rem;
        border-top-left-radius: 1.5rem;
@@ -578,33 +565,7 @@
        object-fit: cover;
     }
 
-    div.pic_activities5 p
-    {
-        font-weight: bolder;
-        padding-bottom: 0.5rem;
-        padding-left: 1rem;
-    }
-
-    div.pic_activities6
-    {
-        border-radius: 1.5rem;
-        box-shadow: 0.4em 0.4em 0.4em #dedede; 
-        width: 325px;
-        margin: 1.5rem;
-        height: 200px;
-    }
-
-    div.activities img.pic_6
-    {
-       border-top-right-radius: 1.5rem;
-       border-top-left-radius: 1.5rem;
-       justify-content: space-around;
-       width: 100%;
-       height: 150px;    
-       object-fit: cover;
-    }
-
-    div.pic_activities6 p
+    div.pic_activities5 p, div.pic_activities6 p
     {
         font-weight: bolder;
         padding-bottom: 0.5rem;
@@ -645,7 +606,6 @@
 
 @media screen and (max-width:1024px)
 {
-
      /*bloc page1024px*/
 
      #bloc_page
@@ -664,29 +624,19 @@
 
      div.box2
      {
-        border-radius: 1.5rem;
-        background-color: #ffff;
-        box-shadow: 0.4em 0.4em 0.4em #dedede;
         display: inline-block;
         margin: 1em;
         width: 250px;
         height: 215px;
-        padding-top: 0.2rem;
-        padding-left: 0.2rem;
         padding-right: 0.2rem;
         padding-bottom: 0.1rem;
      }
 
      aside img
      {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: auto;
         width: 100%;
         height: 50%;
         border-top-right-radius: 1.5rem;
-        border-top-left-radius: 1.5rem;
         border-bottom-left-radius: 0;
         object-fit: cover;
      }
@@ -700,29 +650,21 @@
 
      p.popu_2 
      {
-        margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        margin-left: 1.5rem;
         font-size: 0.9rem;
         margin-left: 0.5rem;
      }
 
-     div.descriptif_1
+     div.descriptif_1, div.descriptif_3
      {
         top: 115px;
-        padding-right: 6.5rem;  
+        padding-right: 12rem;  
      }
 
      div.descriptif_2 
      {
         top: 115px;
-        padding-right: 7rem;  
-     }
-
-     div.descriptif_3
-     {
-         top: 115px;
-         padding-right:6.8rem;
+        padding-right: 12.5rem;  
      }
 
      span.aside
@@ -735,12 +677,13 @@
 
      div.accommodation
      {
-         background-color: #f2f2f2;
-         justify-content: space-between;
-         width: 100%;
          padding-left: 0rem;
          margin: 0rem;
-         height: auto;
+     }
+
+     div.box1
+     {
+        margin-right: 0
      }
 
     /*Activités1024px*/
@@ -762,11 +705,7 @@
 
     div.box3
     {
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        margin-left: 0rem;
-        width: 100%;
     }
 
     div.slice_1, div.slice_2, div.slice_3, div.slice_4
@@ -778,18 +717,9 @@
         justify-content: space-around;
     }
 
-    div.box3
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 0rem;
-        width: 100%;
-    }
-
     div.pic_activities1
     {
-        margin-left: 5.5rem;
+        margin-left: 2rem;
     }
 
     div.pic_activities1, div.pic_activities2, div.pic_activities3, div.pic_activities4, div.pic_activities5, div.pic_activities6
@@ -831,7 +761,6 @@
 
      div.acco_et_aside
      {
-         display: flex;
          flex-wrap: wrap;
          flex-direction: column-reverse;
          width: 100%;
@@ -843,13 +772,20 @@
      {
         width: 95%;
         margin-left:0;
+        min-width: 480px;
+     }
+
+     div.aside
+     {
+         display: flex;
+         justify-content: space-between;
      }
 
      i.chart
      {          
         font-size: 1.7rem;
-        padding-top: 2.2rem;
-        padding-left: 25rem;           
+        padding-top: 2.2rem;  
+        padding-right: 2rem;         
      }
 
      h2.pop
@@ -866,22 +802,12 @@
 
      div.box2
      {
-         display: flex;
-         flex-direction: column;
-         justify-content:flex-start;
-         align-items:flex-start ;  
-         background-color: #ffff;
-         border-radius: 1.5rem;
-         box-shadow: 0.4em 0.4em 0.4em #dedede;
          margin: 2em;
-         padding-top: 0.2rem;
-         padding-left: 0.2rem;
+         margin-left: 8rem;
          padding-bottom: 0.2rem;
-         position: relative;
-         width: 90%;
-         border-radius: 1.5rem;
-         min-width:605px;
-         max-width: 321px;
+         width:100%;
+         min-width:321px;
+         max-width: 465px;
      }   
 
     div.descriptif_1
@@ -903,13 +829,11 @@
 
      aside img
      {               
-         display:flex;
-         flex-wrap: wrap;
          border-radius: 1.5rem 0 0 1.5rem;
          height: 13.4rem;   
-         width: 380px;
+         width: 250px;
+         min-width: 143px;
          object-fit: cover;      
-         margin-left: 0; 
          max-width: 380px;                 
      }
 
@@ -930,7 +854,6 @@
 
    p.popu_2
    {
-       margin-top: 0.5rem;
        margin-bottom: 2.5rem;
        margin-left:1.5rem;
        font-size: 1.3rem;
@@ -941,12 +864,8 @@
  
      div.accommodation 
      {
-         background-color: #f2f2f2;
-         border-radius: 1.5rem;
          padding-left: 3rem;
-         display: inline-block;
          width: 90%;
-         height: 0%;
          margin-top:2rem;
      }
  
@@ -959,6 +878,7 @@
      div.box1
      {
          width: 275px;
+         margin-right: 2rem;
      }
  
     /*filtres780px*/
@@ -968,48 +888,11 @@
         display: block;
     }
    
-    /*acco et aside780px*/
-
-    div.acco_et_aside
-    {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-
     /*activités780px*/
 
     div.activities h2
     {
         padding-left: 2rem;
-    }
-
-    div.box3
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0rem;
-        width: 100%;
-    }
-
-    div.slice_1, div.slice_2, div.slice_3, div.slice_4
-    {
-        display:flex;
-        flex-direction: row;
-        width:100%;
-        padding-right: 0rem;
-        justify-content: space-around;
-    }
-
-    div.box3
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-left: 0rem;
-        width: 100%;
     }
 
     div.pic_activities1
@@ -1195,21 +1078,14 @@
          font-size: 0.9rem;
      }
 
-     /*Hébergement et populaire480px*/
-
-     div.acco_et_aside
-     {
-         display: flex;
-         flex-wrap: wrap;
-         flex-direction: column-reverse;
-         width: 100%;
-     }
+    
 
     /*populaire480px*/
 
     aside
     {
         border-radius: 0 0 0 0;
+        min-width: 200px;
     }
 
     aside img
@@ -1243,13 +1119,10 @@
 
     div.box2
     {
-        width: 80%;
+        width: 85%;
         height: 150px;
         margin-left:2em;
-        margin-top: 2em;
-        margin-right: 2em;
-        margin-bottom: 2em;
-        position: relative;
+        min-width: 200px;
     }
 
     div.descriptif_1
@@ -1274,14 +1147,12 @@
      div.accommodation
      {
          background-color: #ffff;
-         justify-content: space-between;
-         height: auto;
          padding-left: 0;
      }
 
      div.box1
      {
-         margin-left:2rem;
+         margin-left:3rem;
      }
         
     /*Activité 480px*/
@@ -1294,17 +1165,10 @@
 
     div.box3
     {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         width: 100%;
         max-width: 375px;
     }
 
-    div.pic_activities1
-    {
-        margin-left: 1.5rem;
-    }
 
     div.pic_activities1, div.pic_activities2, div.pic_activities3, div.pic_activities4, div.pic_activities5, div.pic_activities6
     {
@@ -1316,12 +1180,10 @@
         height: 130px;
     }
 
-    div.slice_1, div.slice_2, div.slice_3, div.slice_4
+    div.slice_1
     {
-        display:flex;
-        flex-direction: column;    
+        padding-left: 1rem;
     }
-
     div.slice_2, div.slice_3, div.slice_4
     {
         padding-left: 1.5rem;
@@ -1332,8 +1194,5 @@
     footer 
     {
         flex-direction: column;
-        display:flex;
-        width: 100%;
-        padding-right: 0rem;
     }
 }
